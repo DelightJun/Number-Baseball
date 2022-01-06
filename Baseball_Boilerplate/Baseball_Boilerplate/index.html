@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Baseball Project</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="image-box">
+        <img src="images/vanilla_coding_logo.png" />
+      </div>
+      <h1>Baseball</h1>
+
+      <!-- 야구게임 Start -->
+
+      <div class="contents">
+        <div class="clickButton">
+          <button id="startButton">Start</button>
+          <button id="restartButton">Restart</button>
+        </div>
+        <br />
+        <div class="notificationBox">
+          <p id="notice">[Notice!]</p>
+          <ul>
+            <li><p>Press the start button at first</p></li>
+            <li><p>Please enter only number</p></li>
+            <li><p>Don't enter duplicate number</p></li>
+          </ul>
+        </div>
+        <div id="numberBox"></div>
+        <div class="strikeBall">
+          <div id="strike">Strike</div>
+          <div id="ball">Ball</div>
+          <div id="chance"></div>
+        </div>
+        <input
+          type="number"
+          id="inputNumber"
+          oninput="handleOnInput(this, 3)"
+          placeholder="What is your number?"
+        />
+      </div>
+
+      <!-- 야구게임 End -->
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
